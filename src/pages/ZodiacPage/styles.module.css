@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   box-sizing: border-box;
 }
 
@@ -72,8 +72,8 @@
 }
 
 .signCard.selected {
-  border-color: #70a4ff;
-  background-color: #70a4ff30;
+  border-color: #ffd670;
+  background-color: #ffe57030;
 }
 
 .signIcon {

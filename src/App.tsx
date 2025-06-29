@@ -6,6 +6,7 @@ import TarotCardsPage from './pages/TarotCardsPage/TarotCardsPage';
 import DreamPage from './pages/DreamPage/DreamPage';
 import ZodiacPage from './pages/ZodiacPage/ZodiacPage';
 import HelloPage from './pages/HelloPage/HelloPage';
+// import Loader from './components/Loader/Loader';
 
 
 function App() {
@@ -14,11 +15,10 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          {/* <Route path="/cases/:casesId" element={<ProductPage />} />
-          <Route path="/admin/cases/:casesId" element={<AdminProductPage />} /> */}
           <Route path="*" element={
             <>
               <Header />
+              {/* <Loader /> */}
               <Routes>
                 <Route path="/" element={<HelloPage />} />
                 <Route path="/natalChart" element={<NatalChartPage />} />

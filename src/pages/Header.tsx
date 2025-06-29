@@ -134,9 +134,9 @@ const Header = () => {
           >
             <div className={`${styles.headerButton}`}>
               <div className={`${styles.headerIcon} ${styles.adminIMG}`}>
-                <img src="/sovmestimostSvg.png" alt="Совместимость" />
+                <img src="/admin.png" alt="Панель администратора" />
               </div>
-              <div className={styles.headerText}>Совместимость по зз</div>
+              <div className={styles.headerText}>Админ панель</div>
             </div>
           </Link>
         )}
