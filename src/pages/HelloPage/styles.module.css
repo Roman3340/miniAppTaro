@@ -1,0 +1,29 @@
+.helloPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 20px 20px;
+}
+
+.welcomeBlock {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 25px;
+  border: 2px solid #fff3;
+  background-color: #ffffff2a;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px 0px #00000040;
+  margin: 20px auto ;
+  color: #d8d8d8;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: Stem-SemiLight, sans-serif;
+}
+
+.title {
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+}

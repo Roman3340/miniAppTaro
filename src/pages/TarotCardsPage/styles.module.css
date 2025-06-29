@@ -1,0 +1,97 @@
+.title {
+    font-size: 34px;
+    color: #fff;
+    text-align: center;
+}
+
+.questionBlock {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  border-radius: 25px;
+  border: 2px solid #fff3;
+  background-color: #ffffff2a;
+  padding: 13px 15px 13px 12px;
+  height: 60px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px 0px #00000040;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.searchButton {
+  background: #70a4ff40;
+  color: #0031e5;
+  border: none;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.questionInput {
+     margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  margin-top: 2px;
+  background-color: transparent;
+  flex: 1;
+}
+
+.questionInput,
+.questionInput::placeholder {
+font-size: 18px;
+  color: #d8d8d8;
+  font-family: Stem-SemiLight, sans-serif;
+}
+
+.chooseTypeBlock {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.typeCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-radius: 25px;
+  border: 2px solid #fff3;
+  background-color: #ffffff2a;
+  padding: 16px 12px;
+  height: 180px;
+  row-gap: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px 0px #00000040;
+}
+
+.typeCards:hover {
+    border: 2px solid rgba(255, 166, 0, 0.2);
+  background-color: #f1962d6d;
+}
+
+.typeCardsTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+  width: 100%;
+}
+
+.typeCardsIcon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.typeCardsIcon img {
+  max-height: 60px;
+  object-fit: contain;
+}

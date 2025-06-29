@@ -1,0 +1,116 @@
+.zodiacPage {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.selectorBlock {
+  background-color: #ffffff2a;
+  border: 2px solid #fff3;
+  border-radius: 25px;
+  box-shadow: 0px 0px 4px 0px #00000040;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.selectorButton {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  color: #d8d8d8;
+  cursor: pointer;
+  font-family: Stem-SemiLight, sans-serif;
+}
+
+.selectorButton:hover {
+  background-color: #ffffff15;
+}
+
+.signGridWrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.signGridWrapper.open {
+  max-height: 800px; /* Достаточно для 4 строк */
+}
+
+.signGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.signCard {
+  background-color: #ffffff20;
+  border: 2px solid #fff2;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.signCard:hover {
+  border-color: #fff6;
+  background-color: #ffffff30;
+}
+
+.signCard.selected {
+  border-color: #70a4ff;
+  background-color: #70a4ff30;
+}
+
+.signIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.signLabel {
+  font-size: 14px;
+  color: #d8d8d8;
+  font-family: Stem-SemiLight, sans-serif;
+}
+
+
+.buttonBlock {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    padding: 15px;
+    background: #ffffff2a;
+    border: 1px solid #fff3;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:hover {
+    /* background-color: rgba(149, 0, 255, 1);
+    border: 1px solid rgba(149, 0, 255, 1); */
+    background-color: rgb(255, 166, 0);
+    border: 1px solid rgb(255, 166, 0);
+    color: black;
+}

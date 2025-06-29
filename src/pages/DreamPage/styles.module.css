@@ -1,0 +1,72 @@
+.title {
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+}
+
+.questionBlock {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  border: 2px solid #fff3;
+  background-color: #ffffff2a;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 0 #00000040;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.questionInput {
+  width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: #d8d8d8;
+  font-family: Stem-SemiLight, sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.questionInput::placeholder {
+  color: #d8d8d8;
+  font-family: Stem-SemiLight, sans-serif;
+}
+
+.charCount {
+  text-align: right;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #aaa;
+  font-family: Stem-SemiLight, sans-serif;
+}
+
+.buttonBlock {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    padding: 15px;
+    background: #ffffff2a;
+    border: 1px solid #fff3;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button:hover {
+    /* background-color: rgba(149, 0, 255, 1);
+    border: 1px solid rgba(149, 0, 255, 1); */
+    background-color: rgb(255, 166, 0);
+    border: 1px solid rgb(255, 166, 0);
+    color: black;
+}

@@ -73,39 +73,54 @@ const Header = () => {
         >
           <div className={`${styles.headerButton}`}>
             <div className={styles.headerIcon}>
-              <img src="/natalSvg.svg" alt="Натальная карта" />
+              <img src="/natalChartSvg.png" alt="Натальная карта" />
             </div>
             <div className={styles.headerText}>Натальная карта</div>
           </div>
         </Link>
 
         <Link
-          to="/currency"
-          ref={location.pathname === "/currency" ? activeButtonRef : null}
+          to="/tarotCards"
+          ref={location.pathname === "/tarotCards" ? activeButtonRef : null}
           className={`${styles.navButton} ${
-            location.pathname === "/currency" ? styles.active : ""
+            location.pathname === "/tarotCards" ? styles.active : ""
           }`}
         >
           <div className={`${styles.headerButton}`}>
             <div className={styles.headerIcon}>
-              <img src="/tarocardSvg.svg" alt="Карты Таро" />
+              <img src="/tarotCardsSvg.png" alt="Карты Таро" />
             </div>
             <div className={styles.headerText}>Карты Таро</div>
           </div>
         </Link>
 
         <Link
-          to="/cases"
-          ref={location.pathname === "/cases" ? activeButtonRef : null}
+          to="/dreams"
+          ref={location.pathname === "/dreams" ? activeButtonRef : null}
           className={`${styles.navButton} ${
-            location.pathname === "/cases" ? styles.active : ""
+            location.pathname === "/dreams" ? styles.active : ""
           }`}
         >
           <div className={`${styles.headerButton}`}>
             <div className={`${styles.headerIcon} ${styles.casesIMG}`}>
-              <img src="/sonnicSvg.svg" alt="Сонник" />
+              <img src="/sonnicSvg.png" alt="Сонник" />
             </div>
             <div className={styles.headerText}>Сонник</div>
+          </div>
+        </Link>
+
+        <Link
+          to="/zodiac"
+          ref={location.pathname === "/zodiac" ? activeButtonRef : null}
+          className={`${styles.navButton} ${
+            location.pathname === "/zodiac" ? styles.active : ""
+          }`}
+        >
+          <div className={`${styles.headerButton}`}>
+            <div className={`${styles.headerIcon} ${styles.casesIMG}`}>
+              <img src="/sovmestimostSvg.png" alt="Совместимость" />
+            </div>
+            <div className={`${styles.headerText} ${styles.headerTextMin}`}>Совместимость по зз</div>
           </div>
         </Link>
 
@@ -119,7 +134,7 @@ const Header = () => {
           >
             <div className={`${styles.headerButton}`}>
               <div className={`${styles.headerIcon} ${styles.adminIMG}`}>
-                <img src="/sovmestimostSvg.svg" alt="Совместимость" />
+                <img src="/sovmestimostSvg.png" alt="Совместимость" />
               </div>
               <div className={styles.headerText}>Совместимость по зз</div>
             </div>
