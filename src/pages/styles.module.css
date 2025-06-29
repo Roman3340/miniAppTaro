@@ -1,0 +1,118 @@
+.header {
+  padding-top: 90px;
+  padding-left: 20px;
+  overflow-x: auto;
+}
+
+.buttonGroup {
+  display: flex;
+  column-gap: 10px;
+  width: max-content;
+  height: 170px;
+  align-items: center;
+}
+
+.header::-webkit-scrollbar {
+  width: 0;
+}
+
+.navButton {
+  display: inline-block;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.navButton img,
+.navButton .headerText {
+  width: auto;
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+.navButton:hover img,
+.navButton:hover .headerText {
+  filter: brightness(0.9);
+}
+
+.navButton.active img,
+ .navButton.active .headerText{
+  filter: brightness(1.1);
+}
+
+.navButton:hover {
+  transform: scale(1.05);
+}
+
+.navButtonLast {
+  margin-right: 20px;
+}
+
+.headerButton {
+  background: #ffffff40;
+  border: 1px solid #fff3;
+  width: 167px;
+  height: 157px;
+  border-radius: 16px;
+  padding: 2px 2px 10px 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.calcBG {
+  background-color: #4D43FC;
+}
+
+.currencyBG {
+  background: #7F39D8;
+}
+
+.casesBG {
+  background: #A639D8;
+}
+
+.adminBG {
+  background: rgb(34, 34, 34);
+}
+
+
+
+.headerIcon {
+  text-align: right;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.headerIcon img {
+  height: 93px;
+}
+
+.casesIMG img {
+  height: 105px;
+}
+
+.adminIMG {
+  margin-top: 7px;
+  margin-right: 5px;
+}
+
+.adminIMG img {
+  width: 85px;
+  height: 85px;
+}
+
+.trackingIMG img {
+  height: 100px;
+}
+
+.headerText {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.adminHeaderText {
+  color: black;
+}
