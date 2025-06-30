@@ -58,7 +58,7 @@ const Header = () => {
         >
           <div className={styles.headerButton}>
             <div className={`${styles.headerIcon} ${styles.trackingIMG}`}>
-              <img src="/mainpageSvg.svg" alt="Главная страница" />
+              <img src="mainpageSvg.svg" alt="Главная страница" />
             </div>
             <div className={styles.headerText}>Главная страница</div>
           </div>
@@ -73,7 +73,7 @@ const Header = () => {
         >
           <div className={`${styles.headerButton}`}>
             <div className={styles.headerIcon}>
-              <img src="/natalChartSvg.png" alt="Натальная карта" />
+              <img src="natalChartSvg.png" alt="Натальная карта" />
             </div>
             <div className={styles.headerText}>Натальная карта</div>
           </div>
@@ -88,7 +88,7 @@ const Header = () => {
         >
           <div className={`${styles.headerButton}`}>
             <div className={styles.headerIcon}>
-              <img src="/tarotCardsSvg.png" alt="Карты Таро" />
+              <img src="tarotCardsSvg.png" alt="Карты Таро" />
             </div>
             <div className={styles.headerText}>Карты Таро</div>
           </div>
@@ -103,7 +103,7 @@ const Header = () => {
         >
           <div className={`${styles.headerButton}`}>
             <div className={`${styles.headerIcon} ${styles.casesIMG}`}>
-              <img src="/sonnicSvg.png" alt="Сонник" />
+              <img src="sonnicSvg.png" alt="Сонник" />
             </div>
             <div className={styles.headerText}>Сонник</div>
           </div>
@@ -118,9 +118,23 @@ const Header = () => {
         >
           <div className={`${styles.headerButton}`}>
             <div className={`${styles.headerIcon} ${styles.casesIMG}`}>
-              <img src="/sovmestimostSvg.png" alt="Совместимость" />
+              <img src="sovmestimostSvg.png" alt="Совместимость" />
             </div>
             <div className={`${styles.headerText} ${styles.headerTextMin}`}>Совместимость по зз</div>
+          </div>
+        </Link>
+        <Link
+          to="/dayPrediction"
+          ref={location.pathname === "/dayPrediction" ? activeButtonRef : null}
+          className={`${styles.navButton} ${
+            location.pathname === "/dayPrediction" ? styles.active : ""
+          }`}
+        >
+          <div className={`${styles.headerButton}`}>
+            <div className={`${styles.headerIcon} ${styles.casesIMG}`}>
+              <img src="dayTaro.png" alt="Предсказание на день" />
+            </div>
+            <div className={`${styles.headerText} ${styles.headerTextMin}`}>Предсказание на день</div>
           </div>
         </Link>
 
@@ -134,7 +148,7 @@ const Header = () => {
           >
             <div className={`${styles.headerButton}`}>
               <div className={`${styles.headerIcon} ${styles.adminIMG}`}>
-                <img src="/admin.png" alt="Панель администратора" />
+                <img src="admin.png" alt="Панель администратора" />
               </div>
               <div className={styles.headerText}>Админ панель</div>
             </div>

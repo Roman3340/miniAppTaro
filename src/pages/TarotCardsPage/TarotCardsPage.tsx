@@ -18,25 +18,25 @@ const TarotCardsPage = () => {
             <div className={styles.typeCards}>
                 <div className={styles.typeCardsTitle}>Расклад по 1 карте (Да/Нет)</div>
                 <div className={styles.typeCardsIcon}>
-                    <img src="/tarotCard1.png" alt="Карта Таро" />
+                    <img src="tarotCard1.png" alt="Карта Таро" />
                 </div>
             </div>
             <div className={styles.typeCards}>
                 <div className={styles.typeCardsTitle}>Расклад по 2 картам</div>
                 <div className={styles.typeCardsIcon}>
-                    <img src="/tarotCard2.png" alt="Карты Таро" />
+                    <img src="tarotCard2.png" alt="Карты Таро" />
                 </div>
             </div>
             <div className={styles.typeCards}>
                 <div className={styles.typeCardsTitle}>Расклад по 3 картам</div>
                 <div className={styles.typeCardsIcon}>
-                    <img src="/tarotCard3.png" alt="Карты Таро" />
+                    <img src="tarotCard3.png" alt="Карты Таро" />
                 </div>
             </div>
             <div className={styles.typeCards}>
                 <div className={styles.typeCardsTitle}>Расклад по 6 картам</div>
                 <div className={styles.typeCardsIcon}>
-                    <img src="/tarotCard6.png" alt="Карты Таро" />
+                    <img src="tarotCard6.png" alt="Карты Таро" />
                 </div>
             </div>
         </div>

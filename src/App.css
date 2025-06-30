@@ -22,6 +22,10 @@ body {
   background-position: center;
 }
 
+.App {
+  padding-bottom: 100px;
+}
+
 /* Кнопка Каталог - фиксирована внизу */
 .catalogButton,
 .friendButton {
