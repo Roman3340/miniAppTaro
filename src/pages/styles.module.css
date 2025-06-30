@@ -50,7 +50,7 @@
 
 .headerButton {
   background: #ffffff40;
-  border: 1px solid #fff3;
+  border: 2px solid rgba(255, 255, 255, 0.345);
   width: 167px;
   height: 157px;
   border-radius: 16px;

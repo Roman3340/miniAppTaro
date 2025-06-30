@@ -80,7 +80,7 @@ const ZodiacPage = () => {
       </div>
       <div className={styles.buttonBlock}>
         <button className={styles.button}>
-        Узнать совместимость 💛
+        Узнать совместимость 🧡
         </button>
       </div>
     </div>

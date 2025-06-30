@@ -41,12 +41,12 @@ function App() {
               >
                 Каталог
               </button>
-
+{/* 
               <button
                 className="friendButton"
               >
                 Пригласить друга
-              </button>
+              </button> */}
 
               {/* Панель */}
               <div
@@ -54,8 +54,11 @@ function App() {
                 className={`catalogPanel ${catalogOpen ? 'open' : ''}`}
                 aria-hidden={!catalogOpen}
               >
-                <button className="catalogItem">Платные расклады и подписка</button>
-                <button className="catalogItem">Как пользоваться приложением</button>
+                <button className="catalogItem">Платные расклады и подписка ✨</button>
+                <button className="catalogItem">Как пользоваться приложением ❓</button>
+                <button className="catalogItem">Мой баланс раскладов 🔮</button>
+                <button className="catalogItem">Техподдержка ⚙️</button>
+                <button className="catalogItem wide">Пригласить друга 🙍‍♀️</button>
               </div>
             </>
           } />
