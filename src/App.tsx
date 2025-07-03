@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -11,20 +11,72 @@ import HelloPage from './pages/HelloPage/HelloPage';
 import DayPrediction from './pages/DayPrediction/DayPrediction';
 import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
 
+import { checkRegistration } from './api/CheckRegistration'; // твой get-роут
+import AstroLoader from './components/Loader/Loader'; // Импортируем твой лоадер
+
+// Типизация для Telegram WebApp
+declare global {
+  interface Window {
+    Telegram: any;
+  }
+}
+
 function App() {
   // Заглушка: пока считаем пользователь не зарегистрирован
-  const [registered, setRegistered] = useState(false);
-
-  // Каталог боковая панель
+  const [registered, setRegistered] = useState<boolean | null>(null);
   const [catalogOpen, setCatalogOpen] = useState(false);
+  const [telegramId, setTelegramId] = useState<number | null>(null);
+
   const toggleCatalog = () => setCatalogOpen(prev => !prev);
   const closeCatalog = () => setCatalogOpen(false);
+
+  useEffect(() => {
+    // ================================
+    // 1. Получаем telegram_id
+    // ================================
+    let userId: number | null = null;
+
+    // Пробуем взять из Telegram WebApp
+    if (window.Telegram && window.Telegram.WebApp) {
+      userId = window.Telegram.WebApp.initDataUnsafe?.user?.id ?? null;
+    }
+
+    // Если нет Telegram — используем MOCK
+    if (!userId) {
+      console.log('No Telegram detected, using mock ID');
+      userId = 665444333;
+    }
+
+    setTelegramId(userId);
+
+    // ================================
+    // 2. Проверяем регистрацию на бэке
+    // ================================
+    if (userId) {
+      checkRegistration(userId)
+        .then(() => setRegistered(true))
+        .catch(() => setRegistered(false));
+    } else {
+      setRegistered(false);
+    }
+  }, []);
+
+  // ================================
+  // 3. Показ во время загрузки
+  // ================================
+  if (registered === null) {
+    return (
+      <div className="App">
+        <AstroLoader />
+      </div>
+    );
+  }
 
   return (
     <Router>
       <div className="App">
         {!registered ? (
-          <RegistrationPage setRegistered={setRegistered} />
+          <RegistrationPage setRegistered={setRegistered} telegramId={telegramId} />
         ) : (
           <>
             <Header />

@@ -61,6 +61,10 @@
   position: relative;
 }
 
+.headerButton:hover {
+  background: #bfa74f7d;
+}
+
 .calcBG {
   background-color: #4D43FC;
 }

@@ -3,6 +3,21 @@
   --dark: #0a0a0a;
 }
 
+.loaderWrapper {
+  position: fixed; /* Чтобы перекрывать весь экран */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--dark); /* Можно сделать затемнение фона, если нужно */
+  z-index: 9999; /* Чтобы быть поверх всего */
+}
+
 .loader {
   position: relative;
   width: 100px;

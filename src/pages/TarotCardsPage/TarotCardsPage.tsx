@@ -22,18 +22,12 @@ const TarotCardsPage = () => {
                 </div>
             </div>
             <div className={styles.typeCards}>
-                <div className={styles.typeCardsTitle}>Расклад по 2 картам</div>
-                <div className={styles.typeCardsIcon}>
-                    <img src="tarotCard2.png" alt="Карты Таро" />
-                </div>
-            </div>
-            <div className={styles.typeCards}>
                 <div className={styles.typeCardsTitle}>Расклад по 3 картам</div>
                 <div className={styles.typeCardsIcon}>
                     <img src="tarotCard3.png" alt="Карты Таро" />
                 </div>
             </div>
-            <div className={styles.typeCards}>
+            <div className={`${styles.typeCards} ${styles.fullWidth}`}>
                 <div className={styles.typeCardsTitle}>Расклад по 6 картам</div>
                 <div className={styles.typeCardsIcon}>
                     <img src="tarotCard6.png" alt="Карты Таро" />
